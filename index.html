@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./estilos/estilo.css">
+    <link rel="stylesheet" href="./estilos/contacto.css">
+
+    <style>
+        #Layer1,
+        #Layer2,
+        #Layer3,
+        #Layer4,
+        #Layer5 {
+            position: absolute;
+            top: 393px;
+            width: 236px;
+            height: 120px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="seccion-perfil-usuario">
+        <div class="perfil-usuario-header">
+            <div class="perfil-usuario-portada">
+                <div class="perfil-usuario-avatar">
+                    <img src="./imagenes/edi1.jpeg" style="height: 100%; width: 100%;" alt="img-avatar">
+                    <button type="button" class="boton-avatar">
+                        <i class="far fa-image"></i>
+                    </button>
+                </div>
+                <button type="button" class="boton-portada">
+                    <i class="far fa-image"></i> Cambiar fondo
+                </button>
+            </div>
+        </div>
+
+        <div class="perfil-usuario-body">
+            <div class="perfil-usuario-bio">
+                <h1 class="titulos">BIENVENIDOS A MI MUNDO 👍</h1>
+                <h3 class="titulo">Hola,Soy Edilberto Rodriguez Salvador</h3>
+                <h2 class="subtitulo"><i class="fas fa-user icono-persona"></i> Sobre Mi <i
+                        class="fa fa-arrow-right"></i></h2>
+
+                <p class="texto">
+                    Yo disfruto mucho de la <a href="https://definicion.de/musica/" target="_blank">música</a> en todas
+                    sus formas; siempre encuentro en ella una fuente de inspiración y tranquilidad. También soy un
+                    apasionado del <a
+                        href="https://soymaratonista.com/wp-content/uploads/2014/08/01-09-EVOLUCIONTRAIL.jpg"
+                        target="_blank">running</a>; salir a correr no solo me mantiene en forma, sino que es mi momento
+                    para despejar la mente y recargar energías.<br><br>
+
+                    <a href="https://i.pinimg.com/1200x/fe/af/fe/feaffe03f498af94b2b12eda5dfc5824.jpg"
+                        target="_blank">Viajar</a> y descubrir nuevos lugares son parte fundamental de mi vida. Cada
+                    viaje es una oportunidad para aprender algo nuevo, sumergirme en diferentes culturas y paisajes que
+                    enriquecen mi perspectiva del mundo.
+                </p>
+            
+                <div class="video-container">
+                    <br>
+                    <p class="texto-centro"><i class="fas fa-video icono-video"></i> Laguna Azul-Tarapoto</p>
+                    <video class="video-centro" id="video-neon" width="640" height="360" controls>
+                        <source src="./video/video.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                </div>
+
+            </div>
+
+            <div class="perfil-usuario-footer">
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-signs"></i> Dirección de usuario:_________</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Teléfono:</li>
+                    <li><i class="icono fas fa-briefcase"></i> Trabaja en:</li>
+                    <li><i class="icono fas fa-building"></i> Cargo:</li>
+                </ul>
+                <ul class="lista-datos">
+                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicación:</li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha de nacimiento:</li>
+                    <li><i class="icono fas fa-user-check"></i> Registro:</li>
+                    <li><i class="icono fas fa-share-alt"></i> Redes sociales:</li>
+                </ul>
+            </div>
+
+            <div class="redes-sociales">
+                <a href="https://www.facebook.com/ar.rs.56" class="boton-redes facebook fab fa-facebook-f"></a>
+                <a href="https://www.instagram.com/" class="boton-redes instagram fab fa-instagram"></a>
+                <a href="https://www.youtube.com/watch?v=spbagny8OjM" class="boton-redes youtube fab fa-youtube"></a>
+                <a href="https://api.whatsapp.com/send?phone=947627948&text=Hola%20te%20estas%20contactando%20con%20Edilberto,%20en%20que%20puedo%20ayudarte?"
+                    class="boton-redes whatsapp fab fa-whatsapp"></a>
+            </div>
+             
+        </div>
+    </section>
+
+
+        
+<!-- contenedor para mi formulario de contacto-->
+<section id="contact">
+    <div class="sectionheader">
+        <h1>CONTACTO</h1>
+    </div>
+    <article>
+        <p>Escríbenos y en breve los pondremos en contacto contigo</p>
+
+        <label for="checkcontact" class="contactbutton">
+            <div class="mail"></div>
+        </label><input id="checkcontact" type="checkbox">
+
+        <form id="contactForm" action="https://formsubmit.co/rodriguezagapito574@gmail.com" method="post" class="contactform">
+            <p class="input_wrapper"><input type="text" name="contact_nom" id="contact_nom" required><label
+                    for="contact_nom">NOMBRE</label></p>
+            <p class="input_wrapper"><input type="text" name="contact_email" id="contact_email" required><label
+                    for="contact_email">EMAIL</label></p>
+            <p class="input_wrapper"><input type="text" name="contact_sujet" id="contact_sujet" required><label
+                    for="contact_sujet">ASUNTO</label></p>
+            <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message" required></textarea></p>
+            <p class="submit_wrapper"><input type="submit" value="ENVIAR"></p>
+        </form>
+    </article>
+</section>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        const name = document.getElementById("contact_nom").value.trim();
+        const email = document.getElementById("contact_email").value.trim();
+        const subject = document.getElementById("contact_sujet").value.trim();
+        const message = document.getElementById("contact_message").value.trim();
+
+        // Verificar si todos los campos están llenos
+        if (!name || !email || !subject || !message) {
+            alert("Por favor, complete todos los campos.");
+            event.preventDefault(); // Evitar envío
+            return;
+        }
+
+        // Validar el formato del correo electrónico (contiene '@')
+        if (!email.includes("@") || email.indexOf('@') === 0 || email.indexOf('@') === email.length - 1) {
+            alert("Por favor, ingrese un correo electrónico válido con el símbolo '@'.");
+            event.preventDefault(); // Evitar envío
+        }
+    });
+</script>
+
+
+
+
+<!--SECCION DE UBICACION-->
+    <h3 style="text-align: center;">UBICACIÓN</h3>
+    <br>
+    <div id="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d63480.25036940991!2d-77.2078385!3d-6.0609686!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91b727bf4cf0ec33%3A0x637b94ce3004ed3d!2sRioja!5e0!3m2!1ses!2spe!4v1722093213670!5m2!1ses!2spe"
+            width="100%" height="500" style="border: 0; border-radius: 10px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2024 Edilberto Rodriguez Salvador. Todos los derechos reservados.</p>
+        <p>Sígueme en:
+            <a href="" target="_blank">Instagram</a> |
+            <a href="" target="_blank">TikTok</a> |
+            <a href="" target="_blank">Facebook</a>
+        </p>
+    </footer>
+
+
+</body>
+
+</html>
