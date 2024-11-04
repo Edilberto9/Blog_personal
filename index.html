@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
+
     <link rel="stylesheet" href="./estilos/estilo.css">
     <link rel="stylesheet" href="./estilos/contacto.css">
 
@@ -32,11 +36,11 @@
             <div class="perfil-usuario-portada">
                 <div class="perfil-usuario-avatar">
                     <img src="./imagenes/edi1.jpeg" style="height: 100%; width: 100%;" alt="img-avatar">
-                    <button type="button" class="boton-avatar">
+                    <button type="button" class="boton-avatar" onclick="mostrarAlerta()">
                         <i class="far fa-image"></i>
                     </button>
                 </div>
-                <button type="button" class="boton-portada">
+                <button type="button" class="boton-portada" onclick="mostrarAlerta()">
                     <i class="far fa-image"></i> Cambiar fondo
                 </button>
             </div>
@@ -47,7 +51,8 @@
                 <h1 class="titulos">BIENVENIDOS A MI MUNDO 👍</h1>
                 <h3 class="titulo">Hola,Soy Edilberto Rodriguez Salvador</h3>
                 <h2 class="subtitulo"><i class="fas fa-user icono-persona"></i> Sobre Mi <i
-                        class="fa fa-arrow-right"></i></h2>
+                        class="fa fa-arrow-right"></i>
+                </h2>
 
                 <p class="texto">
                     Yo disfruto mucho de la <a href="https://definicion.de/musica/" target="_blank">música</a> en todas
@@ -62,7 +67,7 @@
                     viaje es una oportunidad para aprender algo nuevo, sumergirme en diferentes culturas y paisajes que
                     enriquecen mi perspectiva del mundo.
                 </p>
-            
+
                 <div class="video-container">
                     <br>
                     <p class="texto-centro"><i class="fas fa-video icono-video"></i> Laguna Azul-Tarapoto</p>
@@ -96,63 +101,42 @@
                 <a href="https://api.whatsapp.com/send?phone=947627948&text=Hola%20te%20estas%20contactando%20con%20Edilberto,%20en%20que%20puedo%20ayudarte?"
                     class="boton-redes whatsapp fab fa-whatsapp"></a>
             </div>
-             
+
         </div>
     </section>
 
+    <!-- contenedor para mi formulario de contacto-->
+    <section id="contact">
+        <div class="sectionheader">
+            <h1>CONTACTO</h1>
+        </div>
+        <article>
+            <p>Escríbenos y en breve los pondremos en contacto contigo</p>
 
-        
-<!-- contenedor para mi formulario de contacto-->
-<section id="contact">
-    <div class="sectionheader">
-        <h1>CONTACTO</h1>
-    </div>
-    <article>
-        <p>Escríbenos y en breve los pondremos en contacto contigo</p>
+            <label for="checkcontact" class="contactbutton">
+                <div class="mail"></div>
+            </label><input id="checkcontact" type="checkbox">
 
-        <label for="checkcontact" class="contactbutton">
-            <div class="mail"></div>
-        </label><input id="checkcontact" type="checkbox">
+            <form id="contactForm" action="https://formsubmit.co/rodriguezagapito574@gmail.com" method="post"
+                class="contactform">
+                
+                <input type="hidden" name="_next"
+                    value="https://github.com/Edilberto23/Blog_personal/agradecimiento.html">
 
-        <form id="contactForm" action="https://formsubmit.co/rodriguezagapito574@gmail.com" method="post" class="contactform">
-            <p class="input_wrapper"><input type="text" name="contact_nom" id="contact_nom" required><label
-                    for="contact_nom">NOMBRE</label></p>
-            <p class="input_wrapper"><input type="text" name="contact_email" id="contact_email" required><label
-                    for="contact_email">EMAIL</label></p>
-            <p class="input_wrapper"><input type="text" name="contact_sujet" id="contact_sujet" required><label
-                    for="contact_sujet">ASUNTO</label></p>
-            <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message" required></textarea></p>
-            <p class="submit_wrapper"><input type="submit" value="ENVIAR"></p>
-        </form>
-    </article>
-</section>
+                <p class="input_wrapper"><input type="text" name="contact_nom" id="contact_nom" required><label
+                        for="contact_nom">NOMBRE</label></p>
+                <p class="input_wrapper"><input type="email" name="contact_email" id="contact_email" required><label
+                        for="contact_email">EMAIL</label></p>
+                <p class="input_wrapper"><input type="text" name="contact_sujet" id="contact_sujet" required><label
+                        for="contact_sujet">ASUNTO</label></p>
+                <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message" required></textarea>
+                </p>
+                <p class="submit_wrapper"><input type="submit" value="ENVIAR"></p>
+            </form>
+        </article>
+    </section>
 
-<script>
-    document.getElementById("contactForm").addEventListener("submit", function(event) {
-        const name = document.getElementById("contact_nom").value.trim();
-        const email = document.getElementById("contact_email").value.trim();
-        const subject = document.getElementById("contact_sujet").value.trim();
-        const message = document.getElementById("contact_message").value.trim();
-
-        // Verificar si todos los campos están llenos
-        if (!name || !email || !subject || !message) {
-            alert("Por favor, complete todos los campos.");
-            event.preventDefault(); // Evitar envío
-            return;
-        }
-
-        // Validar el formato del correo electrónico (contiene '@')
-        if (!email.includes("@") || email.indexOf('@') === 0 || email.indexOf('@') === email.length - 1) {
-            alert("Por favor, ingrese un correo electrónico válido con el símbolo '@'.");
-            event.preventDefault(); // Evitar envío
-        }
-    });
-</script>
-
-
-
-
-<!--SECCION DE UBICACION-->
+    <!--SECCION DE UBICACION-->
     <h3 style="text-align: center;">UBICACIÓN</h3>
     <br>
     <div id="map">
@@ -162,6 +146,7 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
+<!--PIE DE PAGINA-->
     <footer class="footer">
         <p>&copy; 2024 Edilberto Rodriguez Salvador. Todos los derechos reservados.</p>
         <p>Sígueme en:
@@ -171,7 +156,7 @@
         </p>
     </footer>
 
-
+ <script src="js/script.js"></script> <!-- Llama al archivo JS --> 
 </body>
 
 </html>

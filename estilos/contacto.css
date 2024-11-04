@@ -125,7 +125,7 @@ padding: 1em;
 transition: all 250ms ease;
 color: #5E5E5E;
 }
-.input_wrapper input[type="text"] {
+.input_wrapper input[type="text"] ,input[type="email"]  {
 margin-top: 1em;
 display: block;
 width: 100%;
@@ -149,7 +149,27 @@ background: rgba(242, 56, 90, 0.05);
 box-shadow: inset 2px 2px 5px 0 #DADADA;
 outline: none;
 text-indent: 0;
+
+
+
+
 }
+.input_wrapper input[type="email"]:focus {
+  background: rgba(242, 56, 90, 0.05);
+  box-shadow: inset 2px 2px 5px 0 #DADADA;
+  outline: none;
+  text-indent: 0;
+  }
+  .input_wrapper input[type="email"]:focus + label {
+    left: 85%;
+    }
+
+
+
+
+
+
+
 .input_wrapper label {
 position: absolute;
 left: 0;
