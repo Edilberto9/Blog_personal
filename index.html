@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+
     <link rel="stylesheet" href="./estilos/estilo.css">
     <link rel="stylesheet" href="./estilos/contacto.css">
 
@@ -81,16 +85,56 @@
 
             <div class="perfil-usuario-footer">
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-signs"></i> Dirección de usuario:_________</li>
-                    <li><i class="icono fas fa-phone-alt"></i> Teléfono:</li>
-                    <li><i class="icono fas fa-briefcase"></i> Trabaja en:</li>
-                    <li><i class="icono fas fa-building"></i> Cargo:</li>
+                    <li><i class="icono fas fa-map-signs"></i> Dirección de usuario: R.S.P</li>
+                    <li><i class="icono fas fa-phone-alt"></i> Teléfono: 947!!!!!!</li>
+                    <li><i class="icono fas fa-briefcase"></i> Trabaja en: _ _ _ _ _ _</li>
+                    <li><i class="icono fas fa-building"></i> Cargo:_ _ _ _ _ _</li>
                 </ul>
                 <ul class="lista-datos">
-                    <li><i class="icono fas fa-map-marker-alt"></i> Ubicación:</li>
-                    <li><i class="icono fas fa-calendar-alt"></i> Fecha de nacimiento:</li>
-                    <li><i class="icono fas fa-user-check"></i> Registro:</li>
-                    <li><i class="icono fas fa-share-alt"></i> Redes sociales:</li>
+                    <li><i class="icono fas fa-map-marker-alt"></i><a href="#ubi">Ubicación </a></li>
+                    <li><i class="icono fas fa-calendar-alt"></i> Fecha de nacimiento:_ _ _ _ _ _</li>
+                    <!-- contenedor para mi formulario de contacto-->
+                    <li>
+
+                        <i class="icono fas fa-envelope"></i><a href="javascript:void(0);" id="contacto_alternativo"
+                            class="contacto-enlace"> Contacto <i class="icono fas fa-caret-down"> </a></i>
+
+                    </li>
+
+                    <!-- contenedor para mi formulario de contacto-->
+                    <section id="contact" class="contact-form-container">
+                        <div class="sectionheader">
+                            <h1>CONTACTO</h1>
+                        </div>
+                        <article>
+                            <p>Escríbenos y en breve los pondremos en contacto contigo</p>
+
+                            <label for="checkcontact" class="contactbutton">
+                                <div class="mail"></div>
+                            </label>
+                            <input id="checkcontact" type="checkbox">
+
+                            <form id="contactForm" action="https://formsubmit.co/rodriguezagapito574@gmail.com"
+                                method="post" class="contactform">
+                                <!--
+                                <input type="hidden" name="_next"
+                                    value="https://github.com/Edilberto9/Blog_personal/html/agradecimiento.html">-->
+
+                                <p class="input_wrapper"><input type="text" name="contact_nom" id="contact_nom"
+                                        required><label for="contact_nom">NOMBRE</label></p>
+                                <p class="input_wrapper"><input type="email" name="contact_email" id="contact_email"
+                                        required><label for="contact_email">EMAIL</label></p>
+                                <p class="input_wrapper"><input type="text" name="contact_sujet" id="contact_sujet"
+                                        required><label for="contact_sujet">ASUNTO</label></p>
+                                <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message"
+                                        required></textarea>
+                                </p>
+                                <p class="submit_wrapper"><input type="submit" value="ENVIAR"></p>
+                            </form>
+                        </article>
+                    </section>
+                    <!-- FIN contenedor para mi formulario de contacto-->
+                    <li><i class="icono fas fa-share-alt"></i><a href="#footer-section">Redes sociales</a></li>
                 </ul>
             </div>
 
@@ -101,43 +145,12 @@
                 <a href="https://api.whatsapp.com/send?phone=947627948&text=Hola%20te%20estas%20contactando%20con%20Edilberto,%20en%20que%20puedo%20ayudarte?"
                     class="boton-redes whatsapp fab fa-whatsapp"></a>
             </div>
-
         </div>
-    </section>
-
-    <!-- contenedor para mi formulario de contacto-->
-    <section id="contact">
-        <div class="sectionheader">
-            <h1>CONTACTO</h1>
-        </div>
-        <article>
-            <p>Escríbenos y en breve los pondremos en contacto contigo</p>
-
-            <label for="checkcontact" class="contactbutton">
-                <div class="mail"></div>
-            </label><input id="checkcontact" type="checkbox">
-
-            <form id="contactForm" action="https://formsubmit.co/rodriguezagapito574@gmail.com" method="post"
-                class="contactform">
-                
-                <input type="hidden" name="_next"
-                    value="https://github.com/Edilberto23/Blog_personal/agradecimiento.html">
-
-                <p class="input_wrapper"><input type="text" name="contact_nom" id="contact_nom" required><label
-                        for="contact_nom">NOMBRE</label></p>
-                <p class="input_wrapper"><input type="email" name="contact_email" id="contact_email" required><label
-                        for="contact_email">EMAIL</label></p>
-                <p class="input_wrapper"><input type="text" name="contact_sujet" id="contact_sujet" required><label
-                        for="contact_sujet">ASUNTO</label></p>
-                <p class="textarea_wrapper"><textarea name="contact_message" id="contact_message" required></textarea>
-                </p>
-                <p class="submit_wrapper"><input type="submit" value="ENVIAR"></p>
-            </form>
-        </article>
     </section>
 
     <!--SECCION DE UBICACION-->
-    <h3 style="text-align: center;">UBICACIÓN</h3>
+    <br>
+    <h3 class="ubicacion" id="ubi">UBICACIÓN</h3>
     <br>
     <div id="map">
         <iframe
@@ -146,17 +159,17 @@
             referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
-<!--PIE DE PAGINA-->
-    <footer class="footer">
+    <!--PIE DE PAGINA-->
+    <footer class="footer" id="footer-section">
         <p>&copy; 2024 Edilberto Rodriguez Salvador. Todos los derechos reservados.</p>
-        <p>Sígueme en:
-            <a href="" target="_blank">Instagram</a> |
-            <a href="" target="_blank">TikTok</a> |
-            <a href="" target="_blank">Facebook</a>
+        <p> Sígueme en:
+            <a href="" target="_blank"><i class="fab fa-instagram"></i> Instagram</a> |
+            <a href="" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a> |
+            <a href="" target=""><i class="fab fa-facebook-f"></i> Facebook</a>
         </p>
     </footer>
 
- <script src="js/script.js"></script> <!-- Llama al archivo JS --> 
+    <script src="js/script.js"></script> <!-- Llama al archivo JS -->
 </body>
 
 </html>

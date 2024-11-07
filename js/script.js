@@ -1,19 +1,19 @@
 //javascrip de la seccion del perfil de usuario
 
-    function mostrarAlerta() {
-        Swal.fire({
-            title: '¡Atención!',
-            text: 'Solo permiso del administrador',
-            icon: 'warning',
-            confirmButtonText: 'Aceptar',
-            background: '#fff',
-            customClass: {
-                title: 'swal-title',
-                content: 'swal-content',
-                confirmButton: 'swal-button'
-            }
-        });
-    }
+function mostrarAlerta() {
+    Swal.fire({
+        title: '¡Atención!',
+        text: 'Solo permiso del administrador',
+        icon: 'warning',
+        confirmButtonText: 'Aceptar',
+        background: '#fff',
+        customClass: {
+            title: 'swal-title',
+            content: 'swal-content',
+            confirmButton: 'swal-button'
+        }
+    });
+}
 
 //escript para mi formulario de contacto
 document.getElementById("contactForm").addEventListener("submit", function (event) {
@@ -35,3 +35,11 @@ document.getElementById("contactForm").addEventListener("submit", function (even
         event.preventDefault(); // Evitar envío
     }
 });
+
+
+//LISTA DESPLEGABLE DEL FORMULARIO DE CONTACTO
+document.getElementById('contacto_alternativo').addEventListener('click', function () {
+    var contactForm = document.getElementById('contact');
+    contactForm.classList.toggle('active');  // Alterna la clase "active"
+});
+

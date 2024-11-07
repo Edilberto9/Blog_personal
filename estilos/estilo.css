@@ -5,7 +5,6 @@ html {
   line-height: 1.4;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +15,13 @@ html {
 
 body {
   color: #404040;
-  font-family: "Arial", Segoe UI, Tahoma, sans-serifl, Helvetica Neue, Helvetica;
+  font-family:
+    "Arial",
+    Segoe UI,
+    Tahoma,
+    sans-serifl,
+    Helvetica Neue,
+    Helvetica;
 }
 
 /*=====================================
@@ -31,8 +36,6 @@ Copiar esto
   align-items: center;
 }
 
-
-
 .perfil-usuario-body .subtitulo {
   display: block;
   width: 100%;
@@ -44,7 +47,7 @@ Copiar esto
   text-align: center; /* Centra el texto horizontalmente */
   margin: 0 auto; /* Opcional: asegura que el contenedor esté centrado */
   font-size: 20px;
-  background: linear-gradient(90deg, #01fc6a, #ffee02,#e460a8,#ffcba0); /* Degradado */
+  background: linear-gradient(90deg, #01fc6a, #ffee02, #e460a8, #ffcba0); /* Degradado */
   -webkit-background-clip: text; /* Clip para Safari */
   background-clip: text; /* Clip para otros navegadores */
   color: transparent; /* Hace el texto transparente */
@@ -65,12 +68,10 @@ Copiar esto
   }
 }
 
-
-p a{
+p a {
   text-decoration: none;
-font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
-
 
 .seccion-perfil-usuario .perfil-usuario-header {
   width: 100%;
@@ -85,7 +86,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
   width: 90%;
   height: 17rem;
-  background-image: linear-gradient(45deg, #BC3CFF, #317FFF);
+  background-image: linear-gradient(45deg, #bc3cff, #317fff);
   background-image: url(../imagenes/edi.jpg);
   border-radius: 0 0 20px 20px;
   /*
@@ -103,7 +104,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   border: 0;
   border-radius: 8px;
   padding: 12px 25px;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   cursor: pointer;
 }
@@ -118,10 +119,10 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 180px;
   align-items: center;
   justify-content: center;
-  border: 7px solid #FFFFFF;
-  background-color: #DFE5F2;
+  border: 7px solid #ffffff;
+  background-color: #dfe5f2;
   border-radius: 50%;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   position: absolute;
   bottom: -40px;
   left: calc(50% - 90px);
@@ -140,7 +141,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   top: -2px;
   border: 0;
   background-color: #fff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   width: 45px;
   height: 45px;
   border-radius: 50%;
@@ -159,7 +160,6 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 1.75em;
   margin-bottom: 0.5rem;
   font-size: 20px;
-  
 }
 
 .seccion-perfil-usuario .perfil-usuario-body .texto {
@@ -172,7 +172,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   display: flex;
   flex-wrap: wrap;
   padding: 1.5rem 2rem;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   border-radius: 15px;
   width: 100%;
@@ -192,7 +192,7 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   padding: 5px 0;
 }
 
-.seccion-perfil-usuario .lista-datos li>.icono {
+.seccion-perfil-usuario .lista-datos li > .icono {
   margin-right: 1rem;
   font-size: 1.2rem;
   vertical-align: middle;
@@ -217,32 +217,39 @@ font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   height: 50px;
   border-radius: 50%;
   color: #fff;
-  box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
   font-size: 1.3rem;
 }
 
-.seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-  margin-top: .5rem;
+.seccion-perfil-usuario .redes-sociales .boton-redes + .boton-redes {
+  margin-top: 0.5rem;
 }
 
 .seccion-perfil-usuario .boton-redes.facebook {
-  background-color: #5955FF;
+  background-color: #5955ff;
 }
 
 .seccion-perfil-usuario .boton-redes.instagram {
-  background: linear-gradient(45deg, #FF2DFD, #40A7FF);
+  background: linear-gradient(45deg, #ff2dfd, #40a7ff);
 }
 
-.seccion-perfil-usuario .boton-redes.whatsapp{
-background-color: #01fc6a;
-
+.seccion-perfil-usuario .boton-redes.whatsapp {
+  background-color: #01fc6a;
 }
 
-.seccion-perfil-usuario .boton-redes.youtube{
-  background: linear-gradient(45deg,red,rgb(255, 0, 157));
+.seccion-perfil-usuario .boton-redes.youtube {
+  background: linear-gradient(45deg, red, rgb(255, 0, 157));
+}
+/*Estilos para el link de envio de mensaje*/
+.contacto-enlace {
+  color: #4b65b9; /* Color inicial del enlace */
+  text-decoration: none;
 }
 
-
+.contacto-enlace:hover {
+  color: #3a4b8f; /* Color al pasar el ratón */
+  text-decoration: underline;
+}
 /*estilos para el video*/
 
 /* Contenedor principal para centrar */
@@ -270,39 +277,73 @@ background-color: #01fc6a;
 }
 /*Estilos de galeria de videos*/
 
-@media (max-width:750) {
-  .video-container{
+@media (max-width: 750) {
+  .video-container {
     width: 90%;
   }
-  
+}
+
+
+
+/* Estilo básico para el texto de UBICACION */
+.ubicacion {
+  font-size: 20px;
+  /* Ajusta el tamaño según lo necesites */
+  font-weight: bold;
+  text-align: center;
+  background: linear-gradient(45deg, #ff0066, #ffcc00, #00ccff, #9900cc);
+  /* Gradiente de colores */
+  background-clip: text;
+  /* Aplica el fondo solo al texto */
+  -webkit-background-clip: text;
+  /* Compatibilidad con navegadores Webkit */
+  color: transparent;
+  /* El texto será transparente para que se vea el gradiente */
+  animation: gradientAnimation 4s ease infinite;
+  /* Animación para cambiar el gradiente */
+}
+
+/* Animación para el cambio de gradiente */
+@keyframes gradientAnimation {
+  0% {
+      background-position: 0% 50%;
+  }
+
+  50% {
+      background-position: 100% 50%;
+  }
+
+  100% {
+      background-position: 0% 50%;
+  }
 }
 
 /* adactacion a dispositivos */
 @media (max-width: 750px) {
   .seccion-perfil-usuario .lista-datos {
-      width: 100%;
+    width: 100%;
   }
 
   .seccion-perfil-usuario .perfil-usuario-portada,
   .seccion-perfil-usuario .perfil-usuario-body {
-      width: 95%;
+    width: 95%;
   }
 
   .seccion-perfil-usuario .redes-sociales {
-      position: relative;
-      flex-direction: row;
-      width: 100%;
-      left: 0;
-      text-align: center;
-      margin-top: 1rem;
-      margin-bottom: 1rem;
-      align-items: center;
-      justify-content: center
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+    justify-content: center;
   }
 
-  .seccion-perfil-usuario .redes-sociales .boton-redes+.boton-redes {
-      margin-left: 1rem;
-      margin-top: 0;
+  .seccion-perfil-usuario .redes-sociales .boton-redes + .boton-redes {
+    margin-left: 1rem;
+    margin-top: 0;
   }
 }
 
@@ -313,7 +354,7 @@ background-color: #01fc6a;
 }
 
 #video-neon::before {
-  content: '';
+  content: "";
   position: absolute;
   top: -5px; /* Ajusta la distancia del contorno */
   left: -5px;
@@ -327,32 +368,84 @@ background-color: #01fc6a;
 }
 
 @keyframes neon-spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+/* Estilos del footer */
+.footer {
+  position: relative;
+  color: #ffffff;
+  background-color: rgb(47, 2, 248);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  width: 100%;
+  overflow: hidden;
+}
 
-    /* Estilos del footer */
-    .footer {
-      background-color: #4b65b9;
-      color: #ffffff;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-      width: 100%;
-      position: relative;
-      bottom: 0;
-  }
+.footer::before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 200%;
+  height: 200px;
+  background: rgba(69, 189, 159, 0.3);
+  opacity: 0.5;
+  border-radius: 45%;
+  animation: wave 5s infinite linear;
+  transform: rotate(0deg);
+}
 
-  .footer p {
-      margin: 0.5rem 0;
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateY(0) rotate(0deg);
   }
+  50% {
+    transform: translateX(-25%) translateY(-25px) rotate(180deg);
+  }
+  100% {
+    transform: translateX(0) translateY(0) rotate(360deg);
+  }
+}
 
-  .footer a {
-      color: #ffffff;
-      text-decoration: none;
-  }
+.footer p {
+  margin: 0.5rem 0;
+}
 
-  .footer a:hover {
-      text-decoration: underline;
-  }
+/* Enlaces normales en el footer */
+.footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Colores específicos para cada icono */
+.footer a .fa-instagram {
+  color: #e4405f !important; /* Color oficial de Instagram */
+}
+
+.footer a .fa-tiktok {
+  color: #69c9d0 !important; /* Color oficial de TikTok */
+}
+
+.footer a .fa-facebook-f {
+  color: #1877f2 !important; /* Color oficial de Facebook */
+}
+
+/* Efecto de hover para iconos de redes sociales */
+.footer a:hover .fa-instagram {
+  color: #d83c5a !important;
+}
+
+.footer a:hover .fa-tiktok {
+  color: #5eb6c4 !important;
+}
+
+.footer a:hover .fa-facebook-f {
+  color: #145cb3 !important;
+}
