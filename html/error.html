@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 404</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Tomorrow', sans-serif;
+        height: 100vh;
+        background: radial-gradient(circle, #0f0524, #2c1368, #511e9e, #782fc6, #9f4ee6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .text {
+        position: absolute;
+        top: 10%;
+        color: #fff;
+        text-align: center;
+        text-shadow: 0 0 10px #ff8c00, 0 0 20px #ff8c00, 0 0 30px #ff4500;
+    }
+
+    h1 {
+        font-size: 80px;
+        animation: pulse 2s infinite;
+    }
+
+    .text div {
+        font-size: 20px;
+        animation: fadeIn 3s ease-in-out infinite alternate;
+    }
+
+    hr {
+        width: 50%;
+        border: 1px solid #fff;
+        margin: 10px auto;
+        opacity: 0.5;
+    }
+
+    .star {
+        position: absolute;
+        width: 3px;
+        height: 3px;
+        background: #fff;
+        border-radius: 50%;
+        animation: starTwinkle 3s infinite linear, fall 6s infinite linear;
+    }
+
+    .astronaut img {
+        width: 150px;
+        position: absolute;
+        top: 55%;
+        animation: astronautFly 6s infinite linear;
+    }
+
+    @keyframes astronautFly {
+        0% {
+            left: -150px;
+        }
+
+        25% {
+            top: 50%;
+            transform: rotate(30deg);
+        }
+
+        50% {
+            transform: rotate(45deg);
+            top: 55%;
+        }
+
+        75% {
+            top: 60%;
+            transform: rotate(30deg);
+        }
+
+        100% {
+            left: 110%;
+            transform: rotate(45deg);
+        }
+    }
+
+    @keyframes starTwinkle {
+        0% {
+            background: rgba(255, 255, 255, 0.4);
+        }
+
+        25% {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        50% {
+            background: rgba(255, 255, 255, 1);
+        }
+
+        75% {
+            background: rgba(255, 255, 255, 0.8);
+        }
+
+        100% {
+            background: rgba(255, 255, 255, 0.4);
+        }
+    }
+
+    @keyframes pulse {
+        0%, 100% {
+            transform: scale(1);
+            color: #fff;
+        }
+
+        50% {
+            transform: scale(1.1);
+            color: #ff4500;
+        }
+    }
+
+    @keyframes fadeIn {
+        0% {
+            opacity: 0.5;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    @keyframes fall {
+        0% {
+            top: -50px;
+            opacity: 1;
+        }
+
+        100% {
+            top: 100vh;
+            opacity: 0;
+        }
+    }
+</style>
+
+<body>
+    <div class="text">
+        <div>¡Oops! Algo salió mal</div>
+        <h1>Error 404</h1>
+        <hr>
+        <div>La página que buscas está en mantenimiento</div>
+    </div>
+
+    <div class="astronaut">
+        <img src="https://images.vexels.com/media/users/3/152639/isolated/preview/506b575739e90613428cdb399175e2c8-space-astronaut-cartoon-by-vexels.png"
+            alt="Astronauta flotando">
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const body = document.body;
+
+            setInterval(createStar, 100);
+
+            function createStar() {
+                const star = document.createElement("div");
+                star.classList.add("star");
+
+                star.style.left = Math.random() * window.innerWidth + "px";
+                star.style.animationDuration = Math.random() * 3 + 2 + "s";
+                star.style.opacity = Math.random();
+
+                body.appendChild(star);
+
+                setTimeout(() => {
+                    star.remove();
+                }, 6000);
+            }
+        });
+    </script>
+</body>
+
+</html>
